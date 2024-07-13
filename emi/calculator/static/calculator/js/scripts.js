@@ -25,7 +25,7 @@ $(document).ready(function() {
             type: 'GET',
             data: $('#emiForm').serialize(),
             success: function(response) {
-                $('#result').html('Monthly EMI: ' + response.emi.toFixed(2));
+                $('#result').html('Monthly EMI: ' + response.emi.toFixed(2)).show();
             }
         });
     });
