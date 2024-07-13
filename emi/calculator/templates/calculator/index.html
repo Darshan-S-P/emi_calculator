@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMI Calculator</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'calculator/css/styles.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'calculator/js/scripts.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <form id="emiForm">
+            <label for="principal">Principal Amount:</label>
+            <input type="number" id="principal" name="principal" required><br><br>
+            <label for="rate">Annual Interest Rate (%):</label>
+            <input type="number" id="rate" name="rate" step="0.01" required><br><br>
+            <label for="time">Time Period (months):</label>
+            <input type="number" id="time" name="time" required><br><br>
+            <input type="submit" value="Calculate EMI">
+        </form>
+        <div id="result"></div>
+    </div>
+    <footer>
+        <p>Developed by Darshan SP (1JT21CS038)</p>
+    </footer>
+</body>
+</html>
